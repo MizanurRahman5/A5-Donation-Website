@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Daisy Ui CDN -->
+     <link
+     href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+     rel="stylesheet"
+     type="text/css"
+   />
+   <script src="https://cdn.tailwindcss.com"></script>
+   <!-- google font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link
+     href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+     rel="stylesheet"
+   />
+   <!-- custom Design -->
+   <script>
+     tailwind.config = {
+       theme: {
+         extend: {
+           font_family: {
+             lexend: "Lexend",
+           },
+         },
+       },
+     };
+   </script>
+    <title>Blog</title>
+</head>
+<body>
+    <header>
+        <section class="bg-[#F9F7F3] py-4">
+            <div class="navbar container mx-auto">
+              <div class="navbar-start">
+                <div class="dropdown"></div>
+                <a class="btn btn-ghost text-black bg-[#B4F461] text-xl">Blog</a>
+              </div>
+              <div class="navbar-center lg:flex gap-x-4">
+                <img class="w-7" src="assets/logo.png" alt="" />
+                <p class="text-xl text-black font-semibold">Donate Bangladesh</p>
+              </div>
+              <div class="navbar-end">
+                <img class="mr-2" src="assets/coin.png" alt="" />
+                <a class="text-gray-600 font-[500]">5500 BDT</a>
+              </div>
+            </div>
+          </section>
+    </header>
+    <main>
+        <section class="container mx-auto my-9">
+            <h1 class="font-extrabold text-5xl">Importent FAQ</h1>
+            <div class="border my-8">
+                <div class="collapse   border-b py-6 rounded-none">
+                    <input type="radio" name="my-accordion-2" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                    <div class="collapse-content">
+                      <p>hello</p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-arrow py-6 border-b rounded-none">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                    <div class="collapse-content">
+                      <p>hello</p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-arrow py-6 border-b rounded-none">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                    <div class="collapse-content">
+                      <p>hello</p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-arrow py-6 border-b rounded-none">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                    <div class="collapse-content">
+                      <p>hello</p>
+                    </div>
+                  </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
