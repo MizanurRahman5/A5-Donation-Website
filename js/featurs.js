@@ -18,7 +18,7 @@ document.getElementById('history-btn').addEventListener('click', function(){
     donationContainer.classList.add('hidden');
     document.getElementById('donation-container-btn').classList.remove('bg-[#B4F461]');
     document.getElementById('history-btn').classList.add('bg-[#B4F461]');
-
+    document.getElementById('history-container').classList.remove('hidden')
     // console.log(donationContainer.classList)
 })
 
