@@ -1,9 +1,6 @@
 const donationContainer = document.getElementById('donation-container');
 // console.log(donationContainer)
 
-
-
-
 const homeBtn = document.getElementById('home-btn');
 // console.log(homeBtn);
 homeBtn.addEventListener('click', function(){

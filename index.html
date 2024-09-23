@@ -48,7 +48,7 @@
           </div>
           <div class="navbar-end">
             <img class="mr-2" src="assets/coin.png" alt="" />
-            <a class="text-gray-600 font-[500]">5500 BDT</a>
+            <a class="text-gray-600 font-[500]"><span id="my-total-blance">5500</span> BDT</a>
           </div>
         </div>
       </section>
@@ -82,7 +82,7 @@
             </div>
             <div class="md:w-1/2 lg:space-y-9">
               <button class="btn text-gray-500">
-                <img src="assets/coin.png" alt="" /> 0 BDT
+                <img src="assets/coin.png" alt="" /> <span id="noakhali-current-blance">0</span> BDT
               </button>
               <h1 class="text-xl font-bold">
                 Donate for Flood at Noakhali, Bangladesh
@@ -96,25 +96,28 @@
                 the lives of those in need.
               </p>
               <input
+              id="n-input-amount"
                 class="p-5 my-3 w-full outline-none border border-[#d2d1d1aa] rounded-lg"
                 type="text"
                 placeholder="Write Donation Amount"
               />
-              <button onclick="my_modal_5.showModal()" class="btn btn-wide text-xl font-semibold w-full bg-[#B4F461]">Donate Now</button>
+              <button id="n-donate-now"  class="btn btn-wide text-xl font-semibold w-full bg-[#B4F461]">Donate Now</button>
               <!-- Open the modal using ID.showModal() method -->
               <dialog
                 id="my_modal_5"
                 class="modal modal-bottom sm:modal-middle"
               >
-                <div class="modal-box">
-                  <h3 class="text-lg font-bold">Hello!</h3>
-                  <p class="py-4">
-                    Press ESC key or click the button below to close
+                <div class="modal-box flex flex-col items-center gap-4">
+                  <h1 class="text-6xl font-bold ">Congrates!</h1>
+                  <img class="" src="assets/coin.png" alt="">
+                  <p class=" ">
+                    You Have Donated for Humankind
                   </p>
+                  <h2 class=" text-4xl font-bold">Succesfully</h2>
                   <div class="modal-action">
                     <form method="dialog">
                       <!-- if there is a button in form, it will close the modal -->
-                      <button class="btn">Close</button>
+                      <button class="btn text-center">Close</button>
                     </form>
                   </div>
                 </div>
@@ -199,12 +202,13 @@
           </div>
         </section>
       </div>
-
       <section class="history container mx-auto">
         <div>This is History Section</div>
       </section>
     </main>
     <footer></footer>
     <script src="/js/featurs.js"></script>
+    <script src="/js/utility.js"></script>
+    <script src="/js/index.js"></script>
   </body>
 </html>
