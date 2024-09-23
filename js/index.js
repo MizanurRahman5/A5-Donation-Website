@@ -32,10 +32,10 @@ document.getElementById('n-donate-now').addEventListener('click', function(){
    div.classList.add('my-4');
    div.innerHTML = `
    <h1 class="text-xl font-bold">${inputValue} Taka is Donated For ${titleText}</h1>
-   <p>Date : ${new Date().toTimeString()}</p>
+   <p>Date : ${new Date()}</p>
    
    `
-   historyContainer.appendChild(div);
+   historyContainer.insertBefore(div, historyContainer.firstChild);
 
 })
 
@@ -76,10 +76,10 @@ document.getElementById('feni-donation-btn').addEventListener('click', function(
    div.classList.add('my-4');
    div.innerHTML = `
    <h1 class="text-xl font-bold">${inputValue} Taka is Donated For ${titleText}</h1>
-   <p>Date : ${new Date().toTimeString()}</p>
+   <p>Date : ${new Date()}</p>
    
    `
-   historyContainer.appendChild(div);
+   historyContainer.insertBefore(div, historyContainer.firstChild);
     // console.log(inputValue)
 
 })
@@ -118,10 +118,10 @@ document.getElementById('quota-movment-danat-btn').addEventListener('click', fun
    div.classList.add('my-4');
    div.innerHTML = `
    <h1 class="text-xl font-bold">${inputValue} Taka is Donated For ${titleText}</h1>
-   <p>Date : ${new Date().toTimeString()}</p>
+   <p>Date : ${new Date()}</p>
    
    `
-   historyContainer.appendChild(div);
+   historyContainer.insertBefore(div, historyContainer.firstChild);
 
 })
 
