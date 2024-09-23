@@ -1,3 +1,8 @@
+const inputValue = getInputValue('n-input-amount');
+for(let i=0; i>inputValue.length; i++){
+    console.log(i);
+}
+
 
 // card 1
 document.getElementById('n-donate-now').addEventListener('click', function(){
@@ -6,6 +11,8 @@ document.getElementById('n-donate-now').addEventListener('click', function(){
     const myTotalBlance = getElementText('my-total-blance');
     const titleText = getElmentInnerText('noakhali');
     const historyContainer = document.getElementById('history-container');
+    
+
     if(isNaN(inputValue)){
         alert('Provide a valid number');
         return;

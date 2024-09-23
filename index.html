@@ -29,6 +29,16 @@
         },
       };
     </script>
+    <style>
+      .input-number::-webkit-inner-spin-button,
+      .input-number::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+      }
+      .input-number {
+          -moz-appearance: textfield;
+      }
+  </style>
     <title>Home</title>
   </head>
   <body class="font-lexend">
@@ -44,7 +54,7 @@
           </div>
           <div class="navbar-center lg:flex md:gap-x-4">
             <img class="w-7" src="assets/logo.png" alt="" />
-            <p class="md:text-xl font-semibold">Donate Bangladesh</p>
+            <p class="md:text-xl max-sm:text-sm font-semibold">Donate Bangladesh</p>
           </div>
           <div class="navbar-end">
             <img class="mr-2" src="assets/coin.png" alt="" />
@@ -97,8 +107,8 @@
               </p>
               <input
               id="n-input-amount"
-                class="p-5 my-3 w-full outline-none border border-[#d2d1d1aa] rounded-lg"
-                type="text"
+                class="input-number p-5 my-3 w-full appearance-none outline-none border border-[#d2d1d1aa] rounded-lg"
+                type="number"
                 placeholder="Write Donation Amount"
               />
               <button id="n-donate-now"  class="btn btn-wide text-xl font-semibold w-full bg-[#B4F461]">Donate Now</button>
@@ -109,7 +119,7 @@
               >
                 <div class="modal-box flex flex-col items-center gap-4">
                   <h1 class="text-6xl font-bold ">Congrates!</h1>
-                  <img class="" src="assets/coin.png" alt="">
+                  <img class="w-12" src="assets/coin.png" alt="">
                   <p class=" ">
                     You Have Donated for Humankind
                   </p>
@@ -152,8 +162,8 @@
               </p>
               <input
               id="input-amount"
-                class="p-5 my-3 w-full outline-none border border-[#d2d1d1aa] rounded-lg"
-                type="text"
+                class="input-number appearance-none p-5 my-3 w-full outline-none border border-[#d2d1d1aa] rounded-lg"
+                type="number"
                 placeholder="Write Donation Amount"
               />
               <button
@@ -192,8 +202,8 @@
               </p>
               <input
               id="quota-input-amount"
-                class="p-5 my-3 w-full outline-none border border-[#d2d1d1aa] rounded-lg"
-                type="text"
+                class="input-number appearance-none p-5 my-3 w-full outline-none border border-[#d2d1d1aa] rounded-lg"
+                type="number"
                 placeholder="Write Donation Amount"
               />
               <button
