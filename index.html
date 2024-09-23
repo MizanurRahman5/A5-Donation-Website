@@ -53,7 +53,7 @@
         </div>
       </section>
       <section
-        class="flex bg-white bg-opacity-90 items-center justify-center py-8 gap-6"
+        class="flex bg-white bg-opacity-80 backdrop-blur-xl items-center justify-center py-8 gap-6"
       >
         <button
           id="donation-container-btn"
@@ -135,10 +135,10 @@
             </div>
             <div class="md:w-1/2 space-y-9">
               <button class="btn text-gray-500">
-                <img src="assets/coin.png" alt="" /> 0 BDT
+                <img src="assets/coin.png" alt="" /> <span id="feni-current-blance">600</span> BDT
               </button>
-              <h1 class="text-xl font-bold">
-                Donate for Flood at Noakhali, Bangladesh
+              <h1 id="feni-title" class="text-xl font-bold">
+                Donate for Flood Relief in Feni,Bangladesh
               </h1>
               <p class="max-w-[522px] text-base leading-6 text-gray-500">
                 The recent floods in Noakhali have caused significant damage to
@@ -151,11 +151,13 @@
                 making a positive impact on the lives of those in need.
               </p>
               <input
+              id="input-amount"
                 class="p-5 my-3 w-full outline-none border border-[#d2d1d1aa] rounded-lg"
                 type="text"
                 placeholder="Write Donation Amount"
               />
               <button
+              id="feni-donation-btn"
                 class="btn btn-wide text-xl font-semibold w-full bg-[#B4F461]"
               >
                 Donate Now
@@ -173,10 +175,10 @@
             </div>
             <div class="md:w-1/2 space-y-9">
               <button class="btn text-gray-500">
-                <img src="assets/coin.png" alt="" /> 0 BDT
+                <img src="assets/coin.png" alt="" /> <span id="quota-current-blance">2400</span> BDT
               </button>
-              <h1 class="text-xl font-bold">
-                Donate for Flood at Noakhali, Bangladesh
+              <h1 id="quota-movment"  class="text-xl font-bold">
+                Aid for Injured in the Quota Movement
               </h1>
               <p class="max-w-[522px] text-base leading-6 text-gray-500">
                 The recent floods in Noakhali have caused significant damage to
@@ -189,11 +191,13 @@
                 making a positive impact on the lives of those in need.
               </p>
               <input
+              id="quota-input-amount"
                 class="p-5 my-3 w-full outline-none border border-[#d2d1d1aa] rounded-lg"
                 type="text"
                 placeholder="Write Donation Amount"
               />
               <button
+              id="quota-movment-danat-btn"
                 class="btn btn-wide text-xl font-semibold w-full bg-[#B4F461]"
               >
                 Donate Now
@@ -209,8 +213,9 @@
       </section>
     </main>
     <footer></footer>
-    <script src="/js/featurs.js"></script>
+    
     <script src="/js/utility.js"></script>
     <script src="/js/index.js"></script>
+    <script src="/js/featurs.js"></script>
   </body>
 </html>

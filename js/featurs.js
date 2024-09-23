@@ -11,6 +11,7 @@ document.getElementById('donation-container-btn').addEventListener('click', func
     donationContainer.classList.remove('hidden');
     document.getElementById('donation-container-btn').classList.add('bg-[#B4F461]');
     document.getElementById('history-btn').classList.remove('bg-[#B4F461]');
+    document.getElementById('history-container').classList.add('hidden')
 })
 
 document.getElementById('history-btn').addEventListener('click', function(){

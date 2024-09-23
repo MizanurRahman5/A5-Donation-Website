@@ -12,3 +12,8 @@ function getElmentInnerText(id){
     const elementInnerText = document.getElementById(id).innerText;
     return elementInnerText;
 }
+
+
+function creatNewElement(){
+    
+}
