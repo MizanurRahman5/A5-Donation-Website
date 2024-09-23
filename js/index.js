@@ -1,5 +1,5 @@
 
-// card 1 addEventlistener 
+// card 1
 document.getElementById('n-donate-now').addEventListener('click', function(){
     const cardCurrentBlance = getElementText('noakhali-current-blance');
     const inputValue = getInputValue('n-input-amount');
@@ -7,13 +7,13 @@ document.getElementById('n-donate-now').addEventListener('click', function(){
     const titleText = getElmentInnerText('noakhali');
     const historyContainer = document.getElementById('history-container');
     if(isNaN(inputValue)){
-        alert('invalid Input');
+        alert('Provide a valid number');
         return;
     }else if(inputValue < 0){
         alert ('invalid Inputs');
         return;
     }else if(myTotalBlance < inputValue){
-        alert('Insufience Blance')
+        alert('insufficient balance')
         return;
     }
     else{
@@ -43,7 +43,7 @@ document.getElementById('n-donate-now').addEventListener('click', function(){
 // card 2
 
 document.getElementById('feni-donation-btn').addEventListener('click', function(){
-    // console.log('clicked')
+    
     const myTotalBlance = getElementText('my-total-blance');
     const cardCurrentBlance = getElementText('feni-current-blance');
     const inputValue = getInputValue('input-amount');
@@ -51,13 +51,13 @@ document.getElementById('feni-donation-btn').addEventListener('click', function(
     const historyContainer = document.getElementById('history-container');
 
     if(isNaN(inputValue)){
-        alert('invalid Input');
+        alert('Provide a valid number');
         return;
     }else if(inputValue < 0){
         alert ('invalid Inputs');
         return;
     }else if(myTotalBlance < inputValue){
-        alert('Insufience Blance');
+        alert('insufficient balance');
         return;
     }else{
         const newCardCurrentBlance = inputValue + cardCurrentBlance;
@@ -80,28 +80,28 @@ document.getElementById('feni-donation-btn').addEventListener('click', function(
    
    `
    historyContainer.insertBefore(div, historyContainer.firstChild);
-    // console.log(inputValue)
+
 
 })
 
+// card 3
 
 document.getElementById('quota-movment-danat-btn').addEventListener('click', function(){
-    // console.log('clicked')
     const myTotalBlance = getElementText('my-total-blance');
     const cardCurrentBlance = getElementText('quota-current-blance');
     const inputValue = getInputValue('quota-input-amount');
     const titleText = getElmentInnerText('quota-movment');
     const historyContainer = document.getElementById('history-container');
-    // console.log(inputValue)
+
 
     if(isNaN(inputValue)){
-        alert('invalid Input');
+        alert('Provide a valid number');
         return;
     }else if(inputValue < 0){
         alert ('invalid Inputs');
         return;
     }else if(myTotalBlance < inputValue){
-        alert('Insufience Blance');
+        alert('insufficient balance');
         return;
     }else{
         const newCardCurrentBlance = inputValue + cardCurrentBlance;
