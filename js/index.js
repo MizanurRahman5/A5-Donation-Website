@@ -13,7 +13,7 @@ document.getElementById('n-donate-now').addEventListener('click', function(){
     const historyContainer = document.getElementById('history-container');
     
 
-    if(isNaN(inputValue)){
+    if(isNaN(inputValue) || inputValue === 0){
         alert('Provide a valid number');
         return;
     }else if(inputValue < 0){
@@ -57,7 +57,7 @@ document.getElementById('feni-donation-btn').addEventListener('click', function(
     const titleText = getElmentInnerText('feni-title');
     const historyContainer = document.getElementById('history-container');
 
-    if(isNaN(inputValue)){
+    if(isNaN(inputValue) || inputValue === 0){
         alert('Provide a valid number');
         return;
     }else if(inputValue < 0){
@@ -101,7 +101,7 @@ document.getElementById('quota-movment-danat-btn').addEventListener('click', fun
     const historyContainer = document.getElementById('history-container');
 
 
-    if(isNaN(inputValue)){
+    if(isNaN(inputValue) || inputValue === 0){
         alert('Provide a valid number');
         return;
     }else if(inputValue < 0){
